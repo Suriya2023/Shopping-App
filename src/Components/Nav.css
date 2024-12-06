@@ -1,0 +1,105 @@
+ 
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background: white;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+  .logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .nav-links li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  .nav-links li a:hover {
+    color: #000;
+  }
+  
+  .cart-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .cart {
+    position: relative;
+    text-decoration: none;
+    color: #555;
+    font-size: 18px;
+  }
+  .badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+  }
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .mobile-nav {
+    list-style: none;
+    background: #f9f9f9;
+    padding: 10px 20px;
+  }
+  .mobile-nav li a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+  }
+  .mobile-nav.hidden {
+    display: none;
+  }
+
+
+  .inputf{
+    border: 2px solid red;
+    border-radius: 1vmin;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    .menu-toggle {
+      display: block;
+    }
+  }
+  @media (min-width: 770px) {
+    #mobile-nav{
+        display: none;
+    }
+
+  }

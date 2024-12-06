@@ -1,0 +1,38 @@
+.circle {
+    height: 24px;
+    width: 24px;
+    /* background: url(/HTML/image/twit01.jpeg); */
+    /* background-color:black; */
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid aqua;
+    cursor: pointer;
+
+    z-index: 0;
+    position: absolute;
+    transition: all .3s;
+    /* box-shadow: 1px 1px 5px 5px red; */
+    /* box-shadow: 2px 1px 14px -1px currentColor; */
+    transform: rotateX(-50%, -50%);
+    position: absolute;
+    /* opacity: ; */
+}
+
+
+/* .un {
+  display: inline-block;
+}
+
+.un::after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: black;
+  transition: 300ms;
+}
+
+.un:hover::after {
+  width: 100%;
+} */
