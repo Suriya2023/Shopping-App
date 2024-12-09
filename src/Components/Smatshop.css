@@ -8,9 +8,24 @@
     /* border: 1px solid red; */
 }
  
-
+#LastWord{
+    padding: 2vmin;
+    
+}
 .iimg{
     width: 100%;
-    height: 100%;
+    height: 300px;
     object-fit: contain;
+    /* border:2px solid red; */
 }   
+
+
+.textcenter{
+    text-align: center;
+    font-size: 4vmin;
+    cursor: pointer;
+    font-weight: bold;
+    /* color: black; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:0 auto;
+}

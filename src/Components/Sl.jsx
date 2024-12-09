@@ -1,4 +1,6 @@
+"use client";
 import React, { useState, useEffect } from 'react'
+import { Carousel } from "flowbite-react";
 
 import './sl.css'
 function Sl(props) {
@@ -33,70 +35,28 @@ function Sl(props) {
 
 
 
-            <div id="default-carousel" class="relative w-full" data-carousel="slide">
-                {/* <!-- Carousel wrapper --> */}
-                <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-                    {/* <!-- Item 1 --> */}
-                    <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://assets.tatacliq.com/medias/sys_master/images/63053281656862.jpg" className="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+          
 
-                    </div>
-                    {/* <!-- Item 2 --> */}
-                    <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://assets.tatacliq.com/medias/sys_master/images/63053281787934.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
 
-                    </div>
-                    {/* <!-- Item 3 --> */}
-                    <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://assets.tatacliq.com/medias/sys_master/images/63053281525790.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            
 
-                    </div>
-                    {/* <!-- Item 4 --> */}
-                    <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://assets.tatacliq.com/medias/sys_master/images/63053281591326.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+ 
+    <div  id="default-carousel" className="h-96 sm:h-64 xl:h-80 2xl:h-96">
+      <Carousel slideInterval={5000}>
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/63053281656862.jpg" alt="..." />
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/63053281787934.jpg" alt="..." />
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/63053281525790.jpg" alt="..." />
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/63053281591326.jpg" alt="..." />
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/63053281919006.jpg" alt="..." />
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/63053281853470.jpg" alt="..." />
+        <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1733580692/Croma%20Assets/CMS/Homepage%20Banners/HP%20Rotating/2024/Dec/08122024/Desktop/HP_Rotating_TV_8Dec2024_xak1kj.jpg" alt="" />
+        {/* <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1733633311/Croma%20Assets/CMS/LP%20Page%20Banners/2024/Sanity/HP/Dec/08122024/HP_Rotating_Monitor_8Dec2024_gbppz1.jpg" alt="..." /> */}
+        <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1733580692/Croma%20Assets/CMS/Homepage%20Banners/HP%20Rotating/2024/Dec/08122024/Desktop/HP_Rotating_Pixel_8Dec2024_dxmtjy.jpg" alt="" />
 
-                    </div>
-                    {/* <!-- It/em 5 --> */}
-                    <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://assets.tatacliq.com/medias/sys_master/images/63053281919006.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+      </Carousel>
+    </div>
+  
 
-                    </div>
-                    <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://assets.tatacliq.com/medias/sys_master/images/63053281722398.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-
-                    </div>
-
-                    <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://assets.tatacliq.com/medias/sys_master/images/63053281853470.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-
-                    </div>
-                </div>
-                {/* <!-- Slider indicators --> */}
-                <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                    <button type="button" className="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                    <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                    <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                    <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-                    <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-                </div>
-                {/* <!-- Slider controls --> */}
-                <button type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
-                        </svg>
-                        <span class="sr-only">Previous</span>
-                    </span>
-                </button>
-                <button type="button" className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
-                        </svg>
-                        <span className="sr-only">Next</span>
-                    </span>
-                </button>
-            </div>
 
 
             {/* mobile view */}
@@ -106,11 +66,20 @@ function Sl(props) {
             <div className="slider-containerr">
                 <div className="sliderr">
                     <div className="slidee" id='side'>
+                    <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1733633311/Croma%20Assets/CMS/LP%20Page%20Banners/2024/Sanity/HP/Dec/08122024/HP_Rotating_Monitor_8Dec2024_gbppz1.jpg" alt="..." />
 
                     </div>
-                    <div className="slidee" id='side1'>2</div>
-                    <div className="slidee" id='side2'>3</div>
-                    <div className="slidee" id='side3'>4</div>
+                    <div className="slidee" id='side1'>
+                    <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1733580691/Croma%20Assets/CMS/Homepage%20Banners/HP%20Rotating/2024/Dec/08122024/Desktop/HP_Rotating_MB_8Dec2024_xx7y1e.jpg" alt="..." />
+
+                    </div>
+                    <div className="slidee" id='side2'>
+                    <img src="https://assets.tatacliq.com/medias/sys_master/images/63053281591326.jpg" alt="..." />
+
+                    </div>
+                    <div className="slidee" id='side3'>
+                    <img src="https://assets.tatacliq.com/medias/sys_master/images/63053281919006.jpg" alt="..." />
+                    </div>
                 </div>
                 <button className="prevv" onClick={prevSlide}>&#10094;</button>
                 <button className="nextt" onClick={nextSlide}>&#10095;</button>

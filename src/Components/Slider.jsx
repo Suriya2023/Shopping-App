@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import './Slider.css';
 import './Smatshop.css'
+
 function Slider(props) {
     const carouselRef = useRef(null);
     const [scrollPosition, setScrollPosition] = useState(0);

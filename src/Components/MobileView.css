@@ -1,0 +1,13 @@
+.mbbottom{
+   
+    display: none;
+    
+}
+/* #mbbottom{
+    background-color: red;
+} */
+@media (max-width:768px) {
+    .mbbottom{
+        display: block;
+    }
+}

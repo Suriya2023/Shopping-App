@@ -1,134 +1,158 @@
-#default-carousel{
-    max-width: 1200px;
-    margin: auto;
-    top: 2vmin;
+#default-carousel {
+  max-width: 1200px;
+  margin: auto;
+  top: 2vmin;
+  height: 53vmin;
 }
+
 
 .slider-containerr {
-    position: relative;
-    /* width: 90%; */
-    max-width: 800px;
-    overflow: hidden;
-  }
-  
-  .sliderr {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .slidee {
-    min-width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    color: #fff;
-    font-weight: bold;
-  }
-  
-  .prevv, .nextt {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(1, 1, 1, 0.5);
-    color:white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    z-index: 100;
-    border-radius: 50%;
+  position: relative;
+  /* width: 90%; */
+  max-width: 800px;
+  overflow: hidden;
 }
-  
-  .prevv {
-    left: 10px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    /* background-color: rgb(72 67 67 / 50%); */
-    color:white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    z-index: 100;
-    border-radius: 50%;
 
-  }
-  
-  .nextt {
-    right: 10px;
-  }
-  
-  /* .prevv:hover, .nextt:hover {
+.sliderr {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slidee {
+  min-width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+}
+.prevv
+ {
+  z-index: 0px;
+}
+.nextt {
+  z-index: 0px;
+}
+
+.prevv,
+.nextt {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(1, 1, 1, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 0px;
+  border-radius: 50%;
+}
+
+.prevv {
+  left: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* background-color: rgb(72 67 67 / 50%); */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 0px;
+  border-radius: 50%;
+
+}
+
+.nextt {
+  right: 10px;
+}
+
+/* .prevv:hover, .nextt:hover {
 
     background-color: rgba(0, 0, 0, 0.8);
   } */
-  #side{
+#side {
+  width: 100%;
+  /* background-position: center; */
+  /* background-color: red; */
+  /* background-image: url(https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1733580691/Croma%20Assets/CMS/Homepage%20Banners/HP%20Rotating/2024/Dec/08122024/Mobile/MHP_Rotating_Charger_8Dec2024_jr8kuy.jpg); */
+  background-size: cover;
+}
+
+#side1 {
+  width: 100%;
+  /* background-position: center; */
+  /* background-color: rgb(27, 22, 22); */
+  /* background-image: url(https://assets.tatacliq.com/medias/sys_master/images/63053281525790.jpg); */
+  background-size: cover;
+}
+
+#side2 {
+  width: 100%;
+  /* background-position: center; */
+  /* background-color: rgb(16, 46, 194); */
+  /* background-image: url(https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1724267652/Croma%20Assets/Communication/Mobiles/Images/309161_0_faolx6.png); */
+  background-size: cover;
+
+}
+
+#side3 {
+  /* background-position: center; */
+  width: 100%;
+  /* background-color: rgb(0, 255, 60); */
+  /* background-image: url(https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1733580691/Croma%20Assets/CMS/Homepage%20Banners/HP%20Rotating/2024/Dec/08122024/Desktop/HP_Rotating_MB_8Dec2024_xx7y1e.jpg); */
+  background-size: cover;
+}
+
+@media (max-width:430px) {
+  #side {
+    background-image: url(https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1733633311/Croma%20Assets/CMS/LP%20Page%20Banners/2024/Sanity/HP/Dec/08122024/HP_Rotating_Monitor_8Dec2024_gbppz1.jpg);
     width: 100%;
-    /* background-position: center; */
-    /* background-color: red; */
-    background-image: url(https://assets.tatacliq.com/medias/sys_master/images/63053281656862.jpg);
-    background-size: cover; 
-  }
-  #side1{
-    width: 100%;
-    /* background-position: center; */
-    /* background-color: rgb(27, 22, 22); */
-    background-image: url(https://assets.tatacliq.com/medias/sys_master/images/63053281525790.jpg);
-    background-size: cover; 
-  }
-  #side2{
-    width: 100%;
-    /* background-position: center; */
-      /* background-color: rgb(16, 46, 194); */
-    background-image: url(https://assets.tatacliq.com/medias/sys_master/images/63053281591326.jpg);
-    background-size: cover; 
-  
-  }
-  #side3{
-    /* background-position: center; */
-    width: 100%;
-    /* background-color: rgb(0, 255, 60); */
-    background-image: url(https://assets.tatacliq.com/medias/sys_master/images/63053281919006.jpg);
-    background-size: cover; 
+    background-position: center;
   }
 
-  @media (max-width:425px)
-{
-  #side{
+  #side1 {
+    background-image: url(https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1733580691/Croma%20Assets/CMS/Homepage%20Banners/HP%20Rotating/2024/Dec/08122024/Desktop/HP_Rotating_MB_8Dec2024_xx7y1e.jpg);
     width: 100%;
     background-position: center;
   }
-  #side1{
+
+  #side2 {
     width: 100%;
     background-position: center;
-  }
-  #side2{
-    width: 100%;
-    background-position: center;
-      /* background-color: rgb(16, 46, 194); */
+    /* background-color: rgb(16, 46, 194); */
     background-image: url(https://assets.tatacliq.com/medias/sys_master/images/63053281591326.jpg);
-    background-size: cover; 
-  
+    background-size: cover;
+
   }
-  #side3{
+
+  #side3 {
     background-position: center;
     width: 100%;
     /* background-color: rgb(0, 255, 60); */
     background-image: url(https://assets.tatacliq.com/medias/sys_master/images/63053281919006.jpg);
-    background-size: cover; 
+    background-size: cover;
   }
 }
-@media (max-width:768px)
-{
-#default-carousel{
+
+@media (max-width:768px) {
+  #default-carousel {
     display: none;
+  }
 }
+
+@media (min-width:1460px) {
+  #default-carousel{
+    
+    height:30vmin;
+  }
 }
-@media (min-width:769px)
-{
-    .slider-containerr{
-        display: none;
-    }
+
+@media (min-width:769px) {
+  .slider-containerr {
+    display: none;
+  }
 
 }
