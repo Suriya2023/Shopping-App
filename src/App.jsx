@@ -1,6 +1,7 @@
 // import { useState } from 'react'
 
 import { useState } from 'react';
+
 import './App.css'
 import Aq1 from './Components/Images/aq1.png'
 import Aq2 from './Components/Images/aq2.png'
@@ -13,17 +14,18 @@ import Aq8 from './Components/Images/aq8.png'
 import Na from './Components/Na'
 import Slider from './Components/Slider';
 import Sl from './Components/Sl';
-import Slidee from './Components/sl2';
+import Categorie from './Components/Categorie';
 import Awesome from './Components/Awesome';
 import Smatshop from './Components/Smatshop';
 import SmartShop2 from './Components/SmartShop2';
-import MobileView from './Components/MobileView';
 import Bank from './Components/BanckOff';
-import UserLogin from './Components/UserLogin';
 import Brands from './Components/brands';
 import Hot from './Components/Hot';
 import Exclusive from './Components/Exclusive';
 import Footer from './Components/Footer';
+import MobileView from './Components/MobileView';
+import UserLogin from './Components/UserLogin';
+
 // import Menu from './Components/menu';
 // import Cart from './Components/cart';
 // import Navbar from './Components/navbar'
@@ -33,6 +35,7 @@ function App() {
 
 
   const [mode, setMode] = useState('light')
+  // const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   let ToggleMode = () => {
     if (mode === 'light') {
@@ -160,9 +163,28 @@ function App() {
   //   total += price;
   //   updateCart();
   // }
-  const [activeTab, setActiveTab] = useState('beauty');
+  // const [activeTab, setActiveTab] = useState('beauty');
   // const [showMenu, setShowMenu] = useState(false);
 
+  // let cm = document.getElementById("Categorie")
+
+  const OpenSidebar = () => {
+    if (document.getElementById('sidebarr').style.display === 'none') {
+      document.getElementById('sidebarr').style.display = 'block';
+    } else {
+      document.getElementById('sidebarr').style.display = 'none';
+    }
+  }
+  const CloseSidebar = () => {
+    if (document.getElementById('sidebarr').style.display === 'block') {
+      document.getElementById('sidebarr').style.display = 'none';
+    }
+    else {
+      document.getElementById('sidebarr').style.display = 'block';
+    }
+  }
+
+  
   return (
     <>
       {/* <div className={`circle bg-${mode}`} >
@@ -177,25 +199,36 @@ function App() {
       {/* <Cart  /> */}
       <Na mode={mode} ToggleMode={ToggleMode} />
       <Sl mode={mode} />
-      <br  mode={mode}/>
-      <Slidee mode={mode}/>
-      <Smatshop mode={mode}/>
-      <SmartShop2 mode={mode}/>
+      <br mode={mode} />
+
+      <Categorie mode={mode} />
+
+      <Smatshop mode={mode} />
+      <SmartShop2 mode={mode} />
 
 
-      <MobileView   activeTab={activeTab} setActiveTab={setActiveTab} mode={mode}/>
-      {activeTab === 'login' && <UserLogin  ToggleMode={ToggleMode} mode={mode}  />}
+      {/* {activeTab === 'login' && */}
+      {/* } */}
 
 
 
-      <Awesome mode={mode}/>
+      <Awesome mode={mode} />
       <Slider mode={mode} />
-      <Bank mode={mode}/>
-      
-      <Brands mode={mode}/>
-      <Exclusive Aq3={Aq3} Aq4={Aq4} Aq5={Aq5} Aq6={Aq6} Aq7={Aq7} Aq8={Aq8} mode={mode}/>
-      <Hot Aq1={Aq1} Aq2={Aq2} mode={mode}/>
-      <Footer mode={mode}/>
+      <Bank mode={mode} />
+
+      <Brands mode={mode} />
+      <Exclusive Aq3={Aq3} Aq4={Aq4} Aq5={Aq5} Aq6={Aq6} Aq7={Aq7} Aq8={Aq8} mode={mode} />
+      <Hot Aq1={Aq1} Aq2={Aq2} mode={mode} />
+      <Footer mode={mode} />
+      <MobileView
+        OpenSidebar={OpenSidebar}
+        mode={mode}
+      />
+      <UserLogin sidebarr='sidebarr'
+        mode={mode}
+        CloseSidebar={CloseSidebar}
+      />
+
 
 
     </>

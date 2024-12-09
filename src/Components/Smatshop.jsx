@@ -64,7 +64,7 @@ function Smatshop(props) {
     }
 
     return (
-        <div className={`bg-${props.mode}`}>
+        <div className={`bg-${props.mode}`} >
 
 
             <br />

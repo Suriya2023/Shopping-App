@@ -1,12 +1,13 @@
 import React from 'react'
 import './sl2.css'
-function slide1(props) {
+function Categorie(props) {
   return (
-    <div className={`bg-${props.mode}`}>
-
+    <div  className={`bg-${props.mode}`}>
+          <h1 className='CategoriesH1'>Categories With Product..</h1>
+{/* <br /> */}
       <div className='containere'>
         <div className='imgggd'>
-          <img src="https://assets.tatacliq.com/medias/sys_master/images/62926917206046.png" alt="" />
+          <a href="#div-smart1" rel="noopener noreferrer"><img src="https://assets.tatacliq.com/medias/sys_master/images/62926917206046.png" alt="" /></a>
         </div>
         <div className='imgggd'>
           <img src="https://assets.tatacliq.com/medias/sys_master/images/62926917271582.png" alt="" />
@@ -50,4 +51,4 @@ function slide1(props) {
   )
 }
 
-export default slide1
+export default Categorie

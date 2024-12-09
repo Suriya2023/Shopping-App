@@ -3,7 +3,7 @@ import './Hot.css'
 // import So from './Images/so.png'
 function Hot(props) {
   return (
-    <div className='hot-container max-w-100'>
+    <div className='hot-container max-w-100' id='div-smart1'>
       <h1>Hot Shopping Deals</h1>
       <br />
       <div className="grid margin-auto  display-grid grid-container">

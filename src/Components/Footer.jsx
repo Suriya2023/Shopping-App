@@ -12,7 +12,7 @@ function Footer(props) {
         <div className="column">
             <h4>Get to Know Us</h4>
             <ul>
-                <li><a style={{hover:underline}} href="#">About Shops</a></li>
+                <li><a href="#">About Shops</a></li>
                 <li><a href="#">Careers</a></li>
                 <li><a href="#">Press Releases</a></li>
                 <li><a href="#">Shops Science</a></li>

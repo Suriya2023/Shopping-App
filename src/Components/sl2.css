@@ -12,10 +12,25 @@
 
     /* grid-template-columns: 1fr 1fr; */
  }
+ #Categories{
+   display: none;
+ }
+.CategoriesH1{
+   margin-bottom: 3vmin;
+   /* font-size: 7vmin; */
+   font-size: 1.875rem;
+   line-height: 2.25rem;
+   font-style: oblique;
+   font-weight: 600;
+   text-align: center;
+}
+.CategoriesH1:hover{
+   text-decoration: underline;
 
+}
  .imgggd {
     padding: 1vmin;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 2vmin;
     /* box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.1); */
 
