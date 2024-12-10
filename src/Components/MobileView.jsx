@@ -59,13 +59,24 @@ function MobileView(props) {
 
         <div className={`containericon bg-${props.mode} `}>
 
-          <div className={`text-${props.mode === 'light' ? 'dark' : 'light'}`}>
-            <a href="/"><i class="fa-solid fa-list"></i>
+        <div  className={`text-${props.mode === 'light' ? 'dark' : 'light'}`}>
+            <a href="#div-smart2"><i class="fa-solid fa-list"></i>
               {/* <i className='svg-inline--fa fa-grid-2 fa-lg'></i> */}
             </a>
             <br />
-            <p>         Categories</p>
+            <p> Category</p>
           </div>
+
+
+          <div className={`text-${props.mode === 'light' ? 'dark' : 'light'}`}>
+            <a href="#div-smart3">
+              <i className="fa-solid fa-ellipsis"></i>
+              <br />
+              <p>   List</p>
+            </a>
+          </div>
+
+
 
           <div className={`text-${props.mode === 'light' ? 'dark' : 'light'}`}>
             <a href="/"><i className="fa-regular fa-heart"></i></a>
@@ -86,15 +97,9 @@ function MobileView(props) {
           </div>
 
 
+          
 
 
-          <div className={`text-${props.mode === 'light' ? 'dark' : 'light'}`}>
-            <a href="/">
-              <i className="fa-solid fa-ellipsis"></i>
-              <br />
-              <p>   List</p>
-            </a>
-          </div>
 
 
           {/* <div>

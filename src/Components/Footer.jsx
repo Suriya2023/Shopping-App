@@ -10,53 +10,53 @@ function Footer(props) {
       <br />
     <div className={`container text-${props.mode === 'light' ? 'dark' : 'light'}`}>
         <div className="column">
-            <h4>Get to Know Us</h4>
+            <h4 style={{fontStyle: 'oblique', fontWeight: '600'}}>Get to Know Us</h4>
             <ul>
-                <li><a href="#">About Shops</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Press Releases</a></li>
-                <li><a href="#">Shops Science</a></li>
+                <li><a style={{fontStyle: 'oblique' }} href="#">About Shops</a></li>
+                <li><a style={{fontStyle: 'oblique' }} href="#">Careers</a></li>
+                <li><a style={{fontStyle: 'oblique' }} href="#">Press Releases</a></li>
+                <li><a style={{fontStyle: 'oblique' }} href="#">Shops Science</a></li>
             </ul>
         </div>
         <div className="column">
-            <h4>Connect with Us</h4>
+            <h4 style={{fontStyle: 'oblique', fontWeight: '600'}}>Connect with Us</h4>
             <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
+                <li><a style={{fontStyle: 'oblique' }} href="#">Facebook</a></li>
+                <li><a style={{fontStyle: 'oblique' }} href="#">Twitter</a></li>
+                <li><a style={{fontStyle: 'oblique' }} href="#">Instagram</a></li>
             </ul>
         </div>
         <div className="column">
-            <h4>Make Money with Us</h4>
+            <h4 style={{fontStyle: 'oblique', fontWeight: '600'}}>Make Money with Us</h4>
             <ul>
-                <li><a href="#">Sell on Shops</a></li>
-                <li><a href="#">Sell under Shop Accelerator</a></li>
-                <li><a href="#">Protect and Build Your Brand</a></li>
-                <li><a href="#">Shops Global Selling</a></li>
-                <li><a href="#">Supply to Shops</a></li>
-                <li><a href="#">Become an Affiliate</a></li>
-                <li><a href="#">Fulfillment by Shops</a></li>
-                <li><a href="#">Advertise Your Products</a></li>
-                <li><a href="#">Shops Pay on Merchants</a></li>
+                <li><a style={{fontStyle: 'oblique' }} href="#">Sell on Shops</a></li>
+                <li><a style={{fontStyle: 'oblique' }} href="#">Sell under Shop Accelerator</a></li>
+                <li><a style={{fontStyle: 'oblique' }} href="#">Protect and Build Your Brand</a></li>
+                <li><a style={{fontStyle: 'oblique' }} href="#">Shops Global Selling</a></li>
+                <li><a style={{fontStyle: 'oblique' }} href="#">Supply to Shops</a></li>
+                <li><a style={{fontStyle: 'oblique' }} href="#">Become an Affiliate</a></li>
+                <li><a style={{fontStyle: 'oblique' }} href="#">Fulfillment by Shops</a></li>
+                <li><a style={{fontStyle: 'oblique' }} href="#">Advertise Your Products</a></li>
+                <li><a style={{fontStyle: 'oblique' }} href="#">Shops Pay on Merchants</a></li>
             </ul>
         </div>
         <div className="column">
-            <h4>Let Us Help You</h4>
+            <h4 style={{fontStyle: 'oblique', fontWeight: '600'}}>Let Us Help You</h4>
             <ul>
-                <li><a href="#">Your Account</a></li>
-                <li><a href="#">Returns Centre</a></li>
-                <li><a href="#">Recalls and Product Safety Alerts</a></li>
-                <li><a href="#">100% Purchase Protection</a></li>
-                <li><a href="#">Shops App Download</a></li>
-                <li><a href="#">Help</a></li>
+                <li><a style={{fontStyle: 'oblique' }} href="#">Your Account</a></li>
+                <li><a style={{fontStyle: 'oblique' }} href="#">Returns Centre</a></li>
+                <li><a style={{fontStyle: 'oblique' }} href="#">Recalls and Product Safety Alerts</a></li>
+                <li><a style={{fontStyle: 'oblique' }} href="#">100% Purchase Protection</a></li>
+                <li><a style={{fontStyle: 'oblique' }} href="#">Shops App Download</a></li>
+                <li><a style={{fontStyle: 'oblique' }} href="#">Help</a></li>
             </ul>
         </div>
     </div>
     <hr />  
 
     <div className="footer-bottom">
-        <p>&copy; 2024 Shop</p>
-         <h1> Made with ❤️ by <a href="/">Suraj Singh Rajput</a></h1>
+        <p style={{fontStyle: 'oblique' , fontSize: '1rem', hover: 'underline'}}>&copy; 2024 Shop</p>
+         <h1 style={{fontStyle: 'oblique' , fontSize: '1rem', hover: 'underline' }}> Made with ❤️ by <a href="/">Suraj Singh Rajput</a></h1>
     </div>
         </div>
     </div>

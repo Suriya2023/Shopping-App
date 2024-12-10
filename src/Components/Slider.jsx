@@ -20,18 +20,18 @@ function Slider(props) {
             {/* <div className='best-deals'> */}
 
 
-            <h1  className='text-center text-3xl font-semibold   cursor-pointer hover:text-red-500 hover:underline'>
-               <span id='LastWord' className={`color-${props.mode}`}> Home Care Tools Up to 20% off. <span id='LastWordChange'>.....</span>  </span>
-                </h1>
+            <h1 style={{ fontWeight: '600', textAlign: 'center', cursor: 'pointer', hover: 'underline', fontFamily: 'Times New Roman, Times, serif', fontSize: '2rem' }}>
+                <span style={{ fontWeight: '600', textAlign: 'center', cursor: 'pointer', hover: 'underline', fontFamily: 'Times New Roman, Times, serif', fontSize: '2rem' }} id='LastWord' className={`color-${props.mode}`}> Home Care Tools Up to 20% off. <span id='LastWordChange'>.....</span>  </span>
+            </h1>
 
             {/* </div> */}
 
             <div className={`carousel-container `}>
                 <div
-                    className={`arrow arrow-left ${props.mode==='black'?'color-white':'color-black'}`}
+                    className={`arrow arrow-left ${props.mode === 'black' ? 'color-white' : 'color-black'}`}
                     onClick={() => scrollCarousel(-1)}
                 >
-                   <i className="fa-solid fa-arrow-left" style={{color:props.mode==='black'?'white':'black'}} ></i>
+                    <i className="fa-solid fa-arrow-left" style={{ color: props.mode === 'black' ? 'white' : 'black' }} ></i>
                 </div>
                 <div className={`carousel bg-${props.mode}`} id="carousel" ref={carouselRef}>
                     <div className="carousel-item">
@@ -144,11 +144,11 @@ function Slider(props) {
                     </div>
                 </div>
                 <div
-                    className={`arrow arrow-right  bg-${props.mode==='black'?'color-white':'color-black'}`}
+                    className={`arrow arrow-right  bg-${props.mode === 'black' ? 'color-white' : 'color-black'}`}
                     onClick={() => scrollCarousel(1)}
                 >
-                   <i className="fa-solid fa-arrow-right" style={{color:props.mode==='black'?'white':'black'}} ></i>
-                </div>  
+                    <i className="fa-solid fa-arrow-right" style={{ color: props.mode === 'black' ? 'white' : 'black' }} ></i>
+                </div>
             </div>
         </div>
     );

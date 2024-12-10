@@ -5,7 +5,9 @@
     padding: 20px 40px;
     /* background: red; */
 }
-
+.awesome-heading h1:hover{
+    text-decoration: underline;
+}
 .category-scroll {
     display: flex;
     overflow-x: auto;

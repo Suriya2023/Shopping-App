@@ -41,8 +41,8 @@ function Exclusive(props) {
       <br />
       <section className={`exclusive-section bg-${props.mode}`}>
         <h1 className={`exclusive-heading text-${props.mode} p-4`}>Exclusively Curated For You</h1>
-        <h1 className={`exclusive-heading text-${props.mode} p-4`}> 
-    </h1>
+        {/* <h1 className={`exclusive-heading text-${props.mode} p-4`}>  */}
+    {/* </h1> */}
         <div className='exclusive-container'>
           <button className="slider-btn prev" onClick={prevSlide}>❮</button>
           <div className='exclusive'>
@@ -70,7 +70,7 @@ function Exclusive(props) {
           ))}
         </div>
       </section>
-      <br />
+      {/* <br /> */}
     </div>
   )
 }

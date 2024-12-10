@@ -49,7 +49,10 @@ function Awesome(props) {
   return (
     <div>
       <div className={`category-container bg-${props.mode}`}>
-   
+   <h1 style={{ fontWeight: '600', textAlign: 'center', cursor: 'pointer', hover: 'underline', fontFamily: 'Times New Roman, Times, serif', fontSize: '2rem' }}>
+    Awesome Features
+
+   </h1>
       <button className={`nav-btn bg-${props.mode === 'dark' ? 'text-white' : 'text-black'} text-${props.mode === 'dark' ? 'text-black' : 'text-white'} prev-btn`}>&#10094;</button>
        
     

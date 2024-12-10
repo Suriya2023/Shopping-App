@@ -68,12 +68,17 @@
 }
 
 .branded-heading h1{
+    font-weight: 600;
+    
+    font-family: 'Times New Roman', Times, serif;
     font-size: 2rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     /* color: #000; */
     cursor: pointer;
 }
-
+.branded-heading h1:hover{
+    text-decoration: underline;
+}
 @media (max-width: 768px) {
     .carouseled-card {
         flex: 0 0 50%;

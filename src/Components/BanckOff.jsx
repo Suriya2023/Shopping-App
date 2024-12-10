@@ -2,7 +2,7 @@ import React from 'react'
 import './Banck.css'
 function BanckOff(props) {
   return (
-    <div className={`max-w-full bg-${props.mode}`}>
+    <div id='div-smart3' style={{transition: 'all 0.5s ease-in-out'}} className={`max-w-full bg-${props.mode}`}>
       <section className='containergd'>
 
 

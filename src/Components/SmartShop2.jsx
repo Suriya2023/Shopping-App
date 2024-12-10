@@ -66,11 +66,10 @@ function SmartShop2(props) {
     return (
         <div className={`bg-${props.mode}`}>
 
-
-            <br />
+ 
 
             <h1 onClick={LastWordChange} className='text-center text-3xl font-semibold   cursor-pointer hover:text-red-500 hover:underline'>
-                <span id='LastWord' className={`color-${props.mode}`}>  Deals You Can't Miss (Extra Offers Inside) <span id='LastWordChange'></span>  </span>
+                <span style={{ fontWeight: '600', textAlign: 'center', cursor: 'pointer', hover: 'underline', fontFamily: 'Times New Roman, Times, serif', fontSize: '2rem' }} id='LastWord' className={`color-${props.mode}`}>  Deals You Can't Miss (Extra Offers Inside) <span id='LastWordChange'></span>  </span>
             </h1>
             {/* create a grid section with 3 cards */}
             <div id='gdcd' className='grid  p-10 max-w-screen-xl mx-auto gap-3'>
@@ -271,8 +270,7 @@ function SmartShop2(props) {
             </div>
 
             <br />
-
-            <br />
+ 
         </div>
     )
 }

@@ -54,6 +54,10 @@ function Smatshop(props) {
         // change the text
         document.getElementById('LastWordChange').innerHTML = ('Brnaded Watch Up to 50% off')
         // remove the animation
+        setTimeout(() => {
+            document.getElementById('LastWordChange').style.animation = 'none'
+        }, 1000);
+
 
         // change the text back to the original text
         document.getElementById('LastWordChange').innerHTML = ('Sale...')
@@ -70,7 +74,7 @@ function Smatshop(props) {
             <br />
 
             <h1 onClick={LastWordChange} className='text-center text-3xl font-semibold   cursor-pointer hover:text-red-500 hover:underline'>
-                <span id='LastWord' className={`color-${props.mode}`}>     Apple Smart Watch Up to 50% off. <span id='LastWordChange'>.....</span>  </span>
+                <span style={{ fontWeight: '600', textAlign: 'center', cursor: 'pointer', hover: 'underline', fontFamily: 'Times New Roman, Times, serif', fontSize: '2rem' }} id='LastWord' className={`color-${props.mode}`}>     Apple Smart Watch Up to 50% off. <span id='LastWordChange'>.....</span>  </span>
             </h1>
             {/* create a grid section with 3 cards */}
             <div id='gdcd' className='grid  p-10 max-w-screen-xl mx-auto gap-3'>
@@ -270,9 +274,9 @@ function Smatshop(props) {
 
             </div>
 
-            <br />
+            {/* <br /> */}
 
-            <br />
+            {/* <br /> */}
         </div>
     )
 }

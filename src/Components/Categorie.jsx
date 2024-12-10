@@ -2,14 +2,14 @@ import React from 'react'
 import './sl2.css'
 function Categorie(props) {
   return (
-    <div  className={`bg-${props.mode}`}>
-          <h1 className='CategoriesH1'>Categories With Product..</h1>
+    <div id='div-smart2' className={`bg-${props.mode}`}>
+          <h1 style={{ fontWeight: '600', textAlign: 'center', cursor: 'pointer', hover: 'underline', fontFamily: 'Times New Roman, Times, serif', fontSize: '2rem' }} className='CategoriesH1'>Categories With Product..</h1>
 {/* <br /> */}
       <div className='containere'>
         <div className='imgggd'>
           <a href="#div-smart1" rel="noopener noreferrer"><img src="https://assets.tatacliq.com/medias/sys_master/images/62926917206046.png" alt="" /></a>
         </div>
-        <div className='imgggd'>
+        <div  className='imgggd'>
           <img src="https://assets.tatacliq.com/medias/sys_master/images/62926917271582.png" alt="" />
         </div>
         <div className='imgggd'>

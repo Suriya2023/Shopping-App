@@ -53,19 +53,19 @@ function Na(props) {
             <nav className={`navbar navbar-expand-lg bg-${props.mode} navbar-${props.mode} `}>
                 <div className={`container  ${props.mode === 'light' ? 'dark' : 'light'}`}>
                     <div className={`logo ${props.mode === 'light' ? 'dark' : 'light'} `}>
-                        <span className="logo-box"><i className="fa-solid fa-bag-shopping"></i> <i className={`underline  ${props.mode === 'light' ? 'dark' : 'light'}`}>Shop</i></span>
+                        <span className="logo-box"><i className="fa-solid fa-bag-shopping"></i> <i style={{fontStyle: 'oblique' }} className={`underline  ${props.mode === 'light' ? 'dark' : 'light'}`}>Shop</i></span>
                     </div>
 
 
 
                     <div className='responss'>
                         <ul className={`nav-links bg-${props.mode}`} id="nav-links">
-                            <li id=''><a className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Men</a></li>
-                            <li id='' ><a className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Women</a></li>
-                            <li id='' ><a className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Kids</a></li>
-                            <li id='' ><a className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Home & Living </a></li>
-                            <li id='' ><a className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Beauty</a></li>
-                            <li id='' ><a className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Studio <sup className='underline' >NEW</sup></a></li>
+                            <li id=''><a style={{fontStyle: 'oblique' }} className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Men</a></li>
+                            <li id='' ><a style={{fontStyle: 'oblique' }} className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Women</a></li>
+                            <li id='' ><a style={{fontStyle: 'oblique' }} className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Kids</a></li>
+                            <li id='' ><a style={{fontStyle: 'oblique' }} className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Home & Living </a></li>
+                            <li id='' ><a style={{fontStyle: 'oblique' }} className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Beauty</a></li>
+                            <li id='' ><a style={{fontStyle: 'oblique' }} className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Studio <sup className='underline' >NEW</sup></a></li>
                             
                         </ul>
                     </div>
@@ -95,7 +95,7 @@ function Na(props) {
                                     <option value="Hoodies"></option>
                                     <option value="Watch"></option>
                                 </datalist>
-                                <input className="shortcut" type='Submit' />
+                                <input  style={{ fontWeight: '600', textAlign: 'center', cursor: 'pointer', hover: 'underline', fontFamily: 'Times New Roman, Times, serif', fontSize: '1.2rem',borderRadius: '10px',paddingRight: '10px',paddingLeft: '10px', border: '1px solid ', fontStyle: 'oblique' }} className={`shortcut ${props.mode === 'light' ? 'dark' : 'light'}`}  type='Submit' />
                             </form>
 
                         </li>
@@ -134,12 +134,12 @@ function Na(props) {
 
                 <div id='respons' className='smallPosition'>
                         <ul className={`nav-links bg-${props.mode}`} id="nav-links  smallPosition">
-                            <li id='anim'><a className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Men</a></li>
-                            <li id='anim1' ><a className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Women</a></li>
-                            <li id='anim2' ><a className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Kids</a></li>
-                            <li id='anim3' ><a className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Home & Living </a></li>
-                            <li id='anim4' ><a className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Beauty</a></li>
-                            <li id='anim5' ><a className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Studio <sup className='underline' >NEW</sup></a></li>
+                            <li id='anim'><a style={{fontStyle: 'oblique' }} className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Men</a></li>
+                            <li id='anim1' ><a style={{fontStyle: 'oblique' }} className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Women</a></li>
+                            <li id='anim2' ><a style={{fontStyle: 'oblique' }} className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Kids</a></li>
+                            <li id='anim3' ><a style={{fontStyle: 'oblique' }} className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Home & Living </a></li>
+                            <li id='anim4' ><a style={{fontStyle: 'oblique' }} className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Beauty</a></li>
+                            <li id='anim5' ><a style={{fontStyle: 'oblique' }} className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Studio <sup className='underline' >NEW</sup></a></li>
                            
                             
                         </ul>
@@ -160,7 +160,7 @@ function Na(props) {
                                     <option value="Hoodies"></option>
                                     <option value="Watch"></option>
                                 </datalist>
-                                <input id='smalbtn' className="shortcut" type='Submit' />
+                                <input style={{fontStyle: 'oblique' }} id='smalbtn' className="shortcut" type='Submit' />
                             </form>
 
                     </div>

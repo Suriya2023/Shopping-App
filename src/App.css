@@ -1,25 +1,39 @@
 .circle {
-    height: 24px;
-    width: 24px;
+    height: 54px;
+    width: 54px;
     /* background: url(/HTML/image/twit01.jpeg); */
     /* background-color:black; */
     border-radius: 100%;
     background-size: cover;
     background-position: center;
-    border: 2px solid aqua;
+    /* border: 2px solid aqua; */
     cursor: pointer;
 
-    z-index: 0;
+    z-index: 550;
     position: absolute;
     transition: all .3s;
     /* box-shadow: 1px 1px 5px 5px red; */
     /* box-shadow: 2px 1px 14px -1px currentColor; */
-    transform: rotateX(-50%, -50%);
+    transform: rotate(50%);
     position: absolute;
     /* opacity: ; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
+.red {
+  margin: auto;
+  transition: all .10s;
+    /* transform: rotateX(-50% ); */
+    /* width: 24px; */
+    border-radius: 100%;
+    /* height: 24px; */
+}
 
+/* .red:hover {
+    transform: rotateX(-50%, );
+} */
 /* .un {
   display: inline-block;
 }
@@ -36,3 +50,17 @@
 .un:hover::after {
   width: 100%;
 } */
+
+
+
+.fa-bag-shopping {
+  transition: all .3s;
+  font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+  .circle {
+    display: none;
+  }
+}
+ 
+

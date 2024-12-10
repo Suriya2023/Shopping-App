@@ -1,6 +1,8 @@
 .hot-container{
     margin: 0px auto;
     text-align: center;
+
+    overflow: hidden;
     padding: 30px;
     max-width: 1200px;
 }
@@ -8,6 +10,39 @@
     font-size: 2rem;
     font-weight: bold;
 }
+.lakals{
+    transition: all 0.9s ease;
+    transform: translateY(400%);
+    opacity: 0;
+}
+.lakals.fire {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.lakals2{
+    transition: all 0.9s ease;
+    transform: translateY(400%);
+    opacity: 0;
+}
+.lakals2.fire {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.lakals3{
+    transition: all 0.9s ease;
+    transform: translateY(400%);
+    opacity: 0;
+}
+.lakals3.fire {
+    opacity: 1;
+    transform: translateX(0%);
+}
+.hot-container h1:hover{
+    text-decoration: underline;
+}
+  
 .grid-item{
     width: 100%;
     height: auto;

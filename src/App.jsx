@@ -184,13 +184,23 @@ function App() {
     }
   }
 
-  
+
   return (
     <>
-      {/* <div className={`circle bg-${mode}`} >
+      <div style={{ border: mode === 'black' ? '2px solid white' : '2px solid' }} className='circle' >
 
-        <div className={`red bg-${mode === 'light' ? 'dark' : 'dark'}`}></div>
-      </div>   */}
+        <div className='red'>
+          <i style={{ margin: 'auto', color: mode === 'dark' ? 'white' : 'black' }} className='fa-solid fa-bag-shopping'></i>
+        </div>
+       
+      
+
+          
+
+
+
+ 
+      </div>
 
 
       {/* <Navbar/>
