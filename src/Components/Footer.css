@@ -4,6 +4,8 @@
     margin: auto;
     max-width: 1200px;
     padding: 20px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .footer .container {
@@ -13,10 +15,20 @@
 }
 
 .footer .column {
+    transition: all 0.8s ;
+    transform: translateX(800%);
+    /* background-color: red; */
     flex: 1;
     min-width: 200px;
     margin: 10px;
 }
+
+.column.fire {
+    transform: translateX(0px);
+
+}
+
+ 
 
 .footer h4 {
     margin-bottom: 15px;
@@ -40,6 +52,7 @@
     /* color: #d5d5d5; */
     font-size: 14px;
 }
+
 .footer ul li a:hover {
     text-decoration: underline;
 }

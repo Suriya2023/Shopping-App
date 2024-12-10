@@ -187,7 +187,7 @@ function App() {
 
   return (
     <>
-      <div style={{ border: mode === 'black' ? '2px solid white' : '2px solid' }} className='circle' >
+      {/* <div style={{ border: mode === 'black' ? '2px solid white' : '2px solid' }} className='circle' >
 
         <div className='red'>
           <i style={{ margin: 'auto', color: mode === 'dark' ? 'white' : 'black' }} className='fa-solid fa-bag-shopping'></i>
@@ -200,7 +200,7 @@ function App() {
 
 
  
-      </div>
+      </div> */}
 
 
       {/* <Navbar/>

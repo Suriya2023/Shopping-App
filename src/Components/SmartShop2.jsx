@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Smatshop.css'
 import './Hot.css'
 
@@ -63,12 +63,29 @@ function SmartShop2(props) {
 
     }
 
+    useEffect(() => {
+        let elements = document.querySelectorAll(".textcenter")
+        let handleScroll = () => {
+            let viewportHeight = window.innerWidth;
+            elements.forEach(element => {
+                let boundingRect = element.getBoundingClientRect().right;
+                if (boundingRect < viewportHeight) {
+                    element.classList.add('fire');
+                } else {
+                    element.classList.remove('fire');
+                }
+            })
+        }
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    })
+
     return (
         <div className={`bg-${props.mode}`}>
 
  
 
-            <h1 onClick={LastWordChange} className='text-center text-3xl font-semibold   cursor-pointer hover:text-red-500 hover:underline'>
+            <h1  onClick={LastWordChange} className='text-center textcenter text-3xl font-semibold   cursor-pointer hover:text-red-500 hover:underline'>
                 <span style={{ fontWeight: '600', textAlign: 'center', cursor: 'pointer', hover: 'underline', fontFamily: 'Times New Roman, Times, serif', fontSize: '2rem' }} id='LastWord' className={`color-${props.mode}`}>  Deals You Can't Miss (Extra Offers Inside) <span id='LastWordChange'></span>  </span>
             </h1>
             {/* create a grid section with 3 cards */}
@@ -76,7 +93,7 @@ function SmartShop2(props) {
                 <div id='card1' className="w-full   max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img className="p-8 rounded-t-lg iimg" src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1698934117/Croma%20Assets/Small%20Appliances/Grooming/Images/260650_0_slecfd.png?tr=w-720" alt="product image" />
+                            <img  className="p-8 rounded-t-lg textcenter iimg" src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1698934117/Croma%20Assets/Small%20Appliances/Grooming/Images/260650_0_slecfd.png?tr=w-720" alt="product image" />
                         </a>
                         <div className="px-5 pb-5">
                             <a href="#">
@@ -114,7 +131,7 @@ function SmartShop2(props) {
                 <div id='card1' className="w-full  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img className="p-8 rounded-t-lg iimg" src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1695200166/Croma%20Assets/Small%20Appliances/Hair%20Care/Images/301335_nyqbr6.png?tr=w-720" alt="product image" />
+                            <img className="p-8 rounded-t-lg textcenter iimg" src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1695200166/Croma%20Assets/Small%20Appliances/Hair%20Care/Images/301335_nyqbr6.png?tr=w-720" alt="product image" />
                         </a>
                         <div className="px-5 pb-5">
                             <a href="#">
@@ -153,7 +170,7 @@ function SmartShop2(props) {
                 <div id='card2' className="w-full  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img className="p-8 rounded-t-lg iimg" src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1697801094/Croma%20Assets/Small%20Appliances/Air%20Purifier/Images/302079_eznmps.png?tr=w-720" alt="product image" />
+                            <img className="p-8 rounded-t-lg textcenter iimg" src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1697801094/Croma%20Assets/Small%20Appliances/Air%20Purifier/Images/302079_eznmps.png?tr=w-720" alt="product image" />
                         </a>
                         <div className="px-5 pb-5">
                             <a href="#">
@@ -193,7 +210,7 @@ function SmartShop2(props) {
                 <div id='card1' className="w-full  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img className="p-8 rounded-t-lg iimg" src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1700586130/Croma%20Assets/Small%20Appliances/Air%20Purifier/Images/303012_rldg0w.png?tr=w-720" alt="product image" />
+                            <img className="p-8 rounded-t-lg textcenter iimg" src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1700586130/Croma%20Assets/Small%20Appliances/Air%20Purifier/Images/303012_rldg0w.png?tr=w-720" alt="product image" />
                         </a>
                         <div className="px-5 pb-5">
                             <a href="#">
@@ -230,7 +247,7 @@ function SmartShop2(props) {
                 <div id='card1' className="w-full  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img className="p-8 rounded-t-lg iimg" src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1730097558/308984_0_ubmauu.png?tr=w-720" alt="product image" />
+                            <img className="p-8 rounded-t-lg textcenter iimg" src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1730097558/308984_0_ubmauu.png?tr=w-720" alt="product image" />
                         </a>
                         <div className="px-5 pb-5">
                             <a href="#">

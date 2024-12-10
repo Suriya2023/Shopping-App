@@ -1,4 +1,4 @@
-  .carousel-container {
+  .carousel-container { 
       width: 100%;
       overflow: hidden;
       position: relative;
@@ -40,6 +40,8 @@
   }
 
   .carousel-item {
+    
+
       flex: 0 0 200px;
       background: #fff;
       border: 1px solid #ddd;
@@ -47,7 +49,31 @@
       padding: 10px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       text-align: center;
+      transition: all 0.15s ease;
+      /* transform: translateY(400%); */
+      /* opacity: 0; */
   }
+  .carouselitem{
+    transition: all 0.15s ease;
+    transform: translateY(400%);
+    opacity: 0;
+  }
+  .carouselitem.fire{
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 0.15s ease;
+  }
+  .Magictxt{
+    transition: all 0.5s ease;
+    transform: translateY(800%);
+    opacity: 0;
+  }
+  .Magictxt.fire{
+    opacity: 1;
+    transform: translatex(0%);
+    transition: all 0.5s ease;
+  }
+
 
   .carousel-item img {
       max-width: 100%;
@@ -108,10 +134,12 @@
   }
 
   .arrow-left {
+    z-index: 2;
       left: 10px;
   }
 
   .arrow-right {
+    z-index: 2;
       right: 10px;
   }
 

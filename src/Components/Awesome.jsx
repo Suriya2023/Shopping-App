@@ -45,11 +45,45 @@ function Awesome(props) {
           };
         }, []); // Empty dependency array since we only want this to run once
       
-        
+        useEffect(() => {
+          let elements = document.querySelectorAll(".Magictxtt")
+          let handleScroll = () => {
+              let viewportHeight = window.innerWidth;
+              elements.forEach(element => {
+                  let boundingRect = element.getBoundingClientRect().right;
+                  if (boundingRect < viewportHeight) {
+                      element.classList.add('fire');
+                  } else {
+                      element.classList.remove('fire');
+                  }
+              })
+          }
+          window.addEventListener('scroll', handleScroll);
+          return () => window.removeEventListener('scroll', handleScroll);
+      })
+
+      useEffect(() => {
+        let elements = document.querySelectorAll(".category-item")
+        let handleScroll = () => {
+            let viewportHeight = window.innerWidth;
+            elements.forEach(element => {
+                let boundingRect = element.getBoundingClientRect().right;
+                if (boundingRect < viewportHeight) {
+                    element.classList.add('fire');
+                } else {
+                    element.classList.remove('fire');
+                }
+            })
+        }
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    })
+
+  
   return (
     <div>
       <div className={`category-container bg-${props.mode}`}>
-   <h1 style={{ fontWeight: '600', textAlign: 'center', cursor: 'pointer', hover: 'underline', fontFamily: 'Times New Roman, Times, serif', fontSize: '2rem' }}>
+   <h1 className="Magictxtt" style={{ fontWeight: '600', textAlign: 'center', cursor: 'pointer', hover: 'underline', fontFamily: 'Times New Roman, Times, serif', fontSize: '2rem' }}>
     Awesome Features
 
    </h1>

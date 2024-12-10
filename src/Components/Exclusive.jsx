@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Exclusive.css'
 
 function Exclusive(props) {
@@ -36,11 +36,35 @@ function Exclusive(props) {
     setCurrentSlide((prev) => (prev - 1 + brands.length) % brands.length);
   };
 
+  useEffect(() => {
+    const elements = document.querySelectorAll('.lakals2');
+    const handleScroll = () => {
+      elements.forEach(element => {
+        element.classList.add('fire');
+      });
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const elements = document.querySelectorAll('.lakals3');
+    const handleScroll = () => {
+      elements.forEach(element => {
+        element.classList.add('fire');
+      });
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+
+
   return (
     <div>
       <br />
       <section className={`exclusive-section bg-${props.mode}`}>
-        <h1 className={`exclusive-heading text-${props.mode} p-4`}>Exclusively Curated For You</h1>
+        <h1 className={`exclusive-heading lakals2 text-${props.mode} p-4`}>Exclusively Curated For You</h1>
         {/* <h1 className={`exclusive-heading text-${props.mode} p-4`}>  */}
     {/* </h1> */}
         <div className='exclusive-container'>
@@ -51,8 +75,8 @@ function Exclusive(props) {
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
               {brands[currentSlide].map((brand, index) => (
-                <div key={index} className="brand-item">
-                  <img src={brand} alt={`Brand ${index + 1}`} />
+                <div  key={index} className="brand-item lakals2">
+                  <img  src={brand} alt={`Brand ${index + 1}`} />
                 </div>
               ))}
             </div>

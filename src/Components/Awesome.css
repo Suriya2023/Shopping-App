@@ -8,6 +8,17 @@
 .awesome-heading h1:hover{
     text-decoration: underline;
 }
+.Magictxtt{
+    transition: all 0.5s ease;
+    transform: translateY(800%);
+    opacity: 0;
+}
+.Magictxtt.fire{
+    opacity: 1;
+    transform: translatex(0%);
+    transition: all 0.5s ease;
+}
+
 .category-scroll {
     display: flex;
     overflow-x: auto;
@@ -31,6 +42,13 @@
     color: white;
     cursor: pointer;
     transition: transform 0.3s ease;
+    transform: translateY(400%);
+    opacity: 0;
+}
+.category-item.fire{
+    opacity: 1;
+    transform: translatex(0%);
+    transition: all 0.5s ease;
 }
 
 .category-item:hover {
