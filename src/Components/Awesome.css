@@ -26,7 +26,7 @@
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE and Edge */
     gap: 20px;
-    padding: 10px 0;
+    /* padding: 10px 0; */
 }
 
 .category-scroll::-webkit-scrollbar {
@@ -41,16 +41,39 @@
     text-align: center;
     color: white;
     cursor: pointer;
-    transition: transform 0.3s ease;
+
+}
+
+.fa-solid{
+    transition: transform 0.3s ease;  
     transform: translateY(400%);
     opacity: 0;
 }
-.category-item.fire{
+.fa-solid.fire{
     opacity: 1;
     transform: translatex(0%);
     transition: all 0.5s ease;
 }
-
+.fa-brands{
+    transition: transform 0.3s ease;  
+    transform: translateY(400%);
+    opacity: 0;
+}
+.fa-brands.fire{
+    opacity: 1;
+    transform: translatex(0%);
+    transition: all 0.5s ease;
+}
+.fas{
+    transition: transform 0.3s ease;  
+    transform: translateY(400%);
+    opacity: 0;
+}
+.fas.fire{
+    opacity: 1;
+    transform: translatex(0%);
+    transition: all 0.5s ease;
+}
 .category-item:hover {
     transform: translateY(-5px);
 }
@@ -82,11 +105,11 @@
 .nav-btn {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
     /* background: rgba(255, 255, 255, 0.1); */
     border: none;
     width: 30px;
-    height: 30px;
+    /* height: 30px; */
     border-radius: 50%;
     /* color: rgb(163, 25, 25); */
     cursor: pointer;
@@ -116,7 +139,7 @@
     
     .icon-circle {
         width: 50px;
-        height: 50px;
+        /* height: 50px; */
     }
     
     .icon-circle i {

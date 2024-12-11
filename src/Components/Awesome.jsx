@@ -63,7 +63,39 @@ function Awesome(props) {
       })
 
       useEffect(() => {
-        let elements = document.querySelectorAll(".category-item")
+        let elements = document.querySelectorAll(".fa-solid")
+        let handleScroll = () => {
+            let viewportHeight = window.innerWidth;
+            elements.forEach(element => {
+                let boundingRect = element.getBoundingClientRect().right;
+                if (boundingRect < viewportHeight) {
+                    element.classList.add('fire');
+                } else {
+                    element.classList.remove('fire');
+                }
+            })
+        }
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    })
+    useEffect(() => {
+        let elements = document.querySelectorAll(".fa-brands")
+        let handleScroll = () => {
+            let viewportHeight = window.innerWidth;
+            elements.forEach(element => {
+                let boundingRect = element.getBoundingClientRect().right;
+                if (boundingRect < viewportHeight) {
+                    element.classList.add('fire');
+                } else {
+                    element.classList.remove('fire');
+                }
+            })
+        }
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    })
+    useEffect(() => {
+        let elements = document.querySelectorAll(".fas")
         let handleScroll = () => {
             let viewportHeight = window.innerWidth;
             elements.forEach(element => {
