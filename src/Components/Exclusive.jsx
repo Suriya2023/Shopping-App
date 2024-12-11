@@ -17,7 +17,7 @@ function Exclusive(props) {
     [
       "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1727682982/Croma%20Assets/CMS/Brand%20Logos/2024/Brands%20Icons/30092024/Brands%20Logo/Brands%20Logo/Desktop/5_pjm9wd.png?tr=w-720",
       "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1727682981/Croma%20Assets/CMS/Brand%20Logos/2024/Brands%20Icons/30092024/Brands%20Logo/Brands%20Logo/Desktop/11_tc1idk.png?tr=w-720",
-      
+
       "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1727682982/Croma%20Assets/CMS/Brand%20Logos/2024/Brands%20Icons/30092024/Brands%20Logo/Brands%20Logo/Desktop/4_wmg1qj.png?tr=w-720",
       "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1727682982/Croma%20Assets/CMS/Brand%20Logos/2024/Brands%20Icons/30092024/Brands%20Logo/Brands%20Logo/Desktop/3_voajbz.png?tr=w-720",
       "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1727682982/Croma%20Assets/CMS/Brand%20Logos/2024/Brands%20Icons/30092024/Brands%20Logo/Brands%20Logo/Desktop/14_xtc6jg.png?tr=w-720"
@@ -36,29 +36,61 @@ function Exclusive(props) {
     setCurrentSlide((prev) => (prev - 1 + brands.length) % brands.length);
   };
 
-  useEffect(() => {
-    const elements = document.querySelectorAll('.lakals2');
-    const handleScroll = () => {
-      elements.forEach(element => {
-        element.classList.add('fire');
-      });
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   const elements = document.querySelectorAll('.lakals2');
+  //   const handleScroll = () => {
+  //     elements.forEach(element => {
+  //       element.classList.add('fire');
+  //     });
+  //   };
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, []);
+
+  // useEffect(() => {
+  //   const elements = document.querySelectorAll('.lakals3');
+  //   const handleScroll = () => {
+  //     elements.forEach(element => {
+  //       element.classList.add('fire');
+  //     });
+  //   };
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, []);
 
   useEffect(() => {
-    const elements = document.querySelectorAll('.lakals3');
-    const handleScroll = () => {
+    let elements = document.querySelectorAll(".lakals2")
+    let handleScroll = () => {
+      let viewportHeight = window.innerHeight;
       elements.forEach(element => {
-        element.classList.add('fire');
-      });
-    };
+        let boundingRect = element.getBoundingClientRect().top;
+        if (boundingRect < viewportHeight) {
+          element.classList.add('fire');
+        } else {
+          element.classList.remove('fire');
+        }
+      })
+    }
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  })
 
-
+  useEffect(() => {
+    let elements = document.querySelectorAll(".lakals3")
+    let handleScroll = () => {
+      let viewportHeight = window.innerHeight;
+      elements.forEach(element => {
+        let boundingRect = element.getBoundingClientRect().top;
+        if (boundingRect < viewportHeight) {
+          element.classList.add('fire');
+        } else {
+          element.classList.remove('fire');
+        }
+      })
+    }
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  })
 
   return (
     <div>
@@ -66,7 +98,7 @@ function Exclusive(props) {
       <section className={`exclusive-section bg-${props.mode}`}>
         <h1 className={`exclusive-heading lakals2 text-${props.mode} p-4`}>Exclusively Curated For You</h1>
         {/* <h1 className={`exclusive-heading text-${props.mode} p-4`}>  */}
-    {/* </h1> */}
+        {/* </h1> */}
         <div className='exclusive-container'>
           <button className="slider-btn prev" onClick={prevSlide}>❮</button>
           <div className='exclusive'>
@@ -75,8 +107,8 @@ function Exclusive(props) {
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
               {brands[currentSlide].map((brand, index) => (
-                <div  key={index} className="brand-item lakals2">
-                  <img  src={brand} alt={`Brand ${index + 1}`} />
+                <div key={index} className="brand-item lakals2">
+                  <img src={brand} alt={`Brand ${index + 1}`} />
                 </div>
               ))}
             </div>

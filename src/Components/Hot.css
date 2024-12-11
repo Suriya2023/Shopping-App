@@ -13,6 +13,8 @@
 }
 
 .local {
+    width: 100%;
+    /* overflow: hidden; */
     /* border: 2px solid red; */
     transition: all 0.9s ease;
     transform: translateX(400%);

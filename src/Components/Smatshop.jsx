@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './Smatshop.css'
 import './Hot.css'
 
@@ -67,21 +67,58 @@ function Smatshop(props) {
 
     }
 
+
+    useEffect(() => {
+        let elements = document.querySelectorAll(".locall")
+        let handleScroll = () => {
+            let viewportHeight = window.innerWidth;
+            elements.forEach(element => {
+                let boundingRect = element.getBoundingClientRect().right;
+                if (boundingRect < viewportHeight) {
+                    element.classList.add('fire');
+                } else {
+                    element.classList.remove('fire');
+                }
+            })
+        }
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    })
+
+    useEffect(() => {
+        let elements = document.querySelectorAll(".localll")
+        let handleScroll = () => {
+            let viewportHeight = window.innerHeight;
+            elements.forEach(element => {
+                let boundingRect = element.getBoundingClientRect().top;
+                if (boundingRect < viewportHeight) {
+                    element.classList.add('fire');
+                } else {
+                    element.classList.remove('fire');
+                }
+            })
+        }
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    })
+
+
+
     return (
-        <div className={`bg-${props.mode}`} >
+        <div id='ddddd' className={`bg-${props.mode}`} >
 
 
             <br />
 
-            <h1 onClick={LastWordChange} className='text-center text-3xl font-semibold   cursor-pointer hover:text-red-500 hover:underline'>
+            <h1  onClick={LastWordChange} className='text-center locall text-3xl font-semibold   cursor-pointer hover:text-red-500 hover:underline'>
                 <span style={{ fontWeight: '600', textAlign: 'center', cursor: 'pointer', hover: 'underline', fontFamily: 'Times New Roman, Times, serif', fontSize: '2rem' }} id='LastWord' className={`color-${props.mode}`}>     Apple Smart Watch Up to 50% off. <span id='LastWordChange'>.....</span>  </span>
             </h1>
             {/* create a grid section with 3 cards */}
-            <div id='gdcd' className='grid  p-10 max-w-screen-xl mx-auto gap-3'>
-                <div id='card1' className="w-full   max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div id='gdcd' className='grid   p-10 max-w-screen-xl mx-auto gap-3'>
+                <div id='card1' className="w-full localll max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div id='LastWorldd' className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img className="p-8 rounded-t-lg iimg" src="https://m.media-amazon.com/images/I/61mJkw14hLL._AC_UY327_FMwebp_QL65_.jpg" alt="product image" />
+                            <img className="p-8 rounded-t-lg  iimg" src="https://m.media-amazon.com/images/I/61mJkw14hLL._AC_UY327_FMwebp_QL65_.jpg" alt="product image" />
                         </a>
                         <div className="px-5 pb-5">
                             <a href="#">
@@ -117,10 +154,10 @@ function Smatshop(props) {
                     </div>
                 </div>
 
-                <div id='card2' className="w-full  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div id='card2' className="w-full localll max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img className="p-8 rounded-t-lg iimg" src="https://m.media-amazon.com/images/I/81YtQDW9LCL._AC_UY327_FMwebp_QL65_.jpg" alt="product image" />
+                            <img className="p-8 rounded-t-lg  iimg" src="https://m.media-amazon.com/images/I/81YtQDW9LCL._AC_UY327_FMwebp_QL65_.jpg" alt="product image" />
                         </a>
                         <div className="px-5 pb-5">
                             <a href="#">
@@ -157,7 +194,7 @@ function Smatshop(props) {
                     </div>
                 </div>
 
-                <div id='card1' className="w-full  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div id='card1' className="w-full localll max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
                             <img className="p-8 rounded-t-lg iimg" src="https://m.media-amazon.com/images/I/91z5KuonXrL._AC_UY327_FMwebp_QL65_.jpg" alt="product image" />
@@ -194,14 +231,14 @@ function Smatshop(props) {
                     </div>
                 </div>
 
-                <div id='card1' className="w-full  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div id='card1' className="w-full localll max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
                             <img className="p-8 rounded-t-lg iimg" src="https://m.media-amazon.com/images/I/81V3wgQBeuL._AC_UY327_FMwebp_QL65_.jpg" alt="product image" />
                         </a>
                         <div className="px-5 pb-5">
                             <a href="#">
-                                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Apple Watch Series 8 [GPS + Cellular] Smart Watch with Midnight Sport</h5>
+                                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Apple Watch Series 8 [GPS + Cellular + ultra] Smart Watch with Midnight Sport</h5>
                             </a>
                             <div className="flex items-center mt-2.5 mb-5">
                                 <div className="flex items-center space-x-1 rtl:space-x-reverse">
@@ -233,14 +270,14 @@ function Smatshop(props) {
                     </div>
                 </div>
 
-                <div id='card1' className="w-full  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div id='card1' className="w-full localll max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
                             <img className="p-8 rounded-t-lg iimg" src="https://m.media-amazon.com/images/I/71ebir3eG4L._AC_UY327_FMwebp_QL65_.jpg" alt="product image" />
                         </a>
                         <div className="px-5 pb-5">
                             <a href="#">
-                                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Smart Watch with Metal Body, in-Built Games, Wireless Charging (Blue)</h5>
+                                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Smart Watch with Metal Body, Waterproof, in-Built Games, Wireless Charging (Blue)</h5>
                             </a>
                             <div className="flex items-center mt-2.5 mb-5">
                                 <div className="flex items-center space-x-1 rtl:space-x-reverse">

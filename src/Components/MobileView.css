@@ -20,8 +20,9 @@
 
 .containericon{
  
-    border: 2px solid ;
+    border: 1px solid ;
     margin: auto;
+    box-shadow: 10px 10px 10px 10px;
     border-radius: 2vmin;
     padding: 2vmin;
     text-align: center;

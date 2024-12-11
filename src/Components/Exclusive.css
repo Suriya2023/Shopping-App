@@ -100,24 +100,24 @@
 }   
  
 .lakals3{
-    transition: all 0.15s ease;
-    transform: translateY(0%);
+    transition: all 0.5s ease;
+    transform: translateY(400%);
     opacity: 0;
 
 }
 .lakals3.fire{
-    transition: all 0.15s ease;
-    transform: translateY(0%);
+    transition: all 0.5s ease;
+    transform: translateX(0%);
     opacity: 1;
 }
 .lakals2{
-    transition: all 25s ease;
+    transition: all 5s ease;
     transform: translateY(400%);
     opacity: 0;
 }
 .lakals2.fire{
-    transition: all 0.1s ease;
-    transform: translateY(0%);
+    transition: all 0.5s ease;
+    transform: translateX(0%);
     opacity: 1;
 }
 

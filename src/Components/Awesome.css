@@ -44,35 +44,15 @@
 
 }
 
-.fa-solid{
-    transition: transform 0.3s ease;  
-    transform: translateY(400%);
-    opacity: 0;
-}
-.fa-solid.fire{
-    opacity: 1;
-    transform: translatex(0%);
+#icon-circle{
     transition: all 0.5s ease;
-}
-.fa-brands{
-    transition: transform 0.3s ease;  
-    transform: translateY(400%);
+    transform: translateY(800%);
     opacity: 0;
+
 }
-.fa-brands.fire{
+#icon-circle.fire{
     opacity: 1;
-    transform: translatex(0%);
-    transition: all 0.5s ease;
-}
-.fas{
-    transition: transform 0.3s ease;  
-    transform: translateY(400%);
-    opacity: 0;
-}
-.fas.fire{
-    opacity: 1;
-    transform: translatex(0%);
-    transition: all 0.5s ease;
+    transform: translateX(0%);
 }
 .category-item:hover {
     transform: translateY(-5px);

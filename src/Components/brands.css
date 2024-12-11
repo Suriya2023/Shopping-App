@@ -9,12 +9,12 @@
     overflow: hidden;
 }
 .Magical{
-    transition: all 0.15s ease;
-    transform: translateX(800%);
+    transition: all 0.5s ease;
+    transform: translateY(400%);
     opacity: 0;
 }
 .Magical.fire{
-    transition: all 0.15s ease;
+    transition: all 0.5s ease;
     transform: translateY(0%);
     opacity: 1;
 }
@@ -74,15 +74,14 @@
 .branded-heading{
     text-align: center;
     margin-top: 20px;
-}
-.branded-heading{
-    transition: all 0.15s ease;
+    transition: all 0.5s ease;
     transform: translateY(400%);
     opacity: 0;
 }
+ 
 .branded-heading.fire{
-    transition: all 0.15s ease;
-    transform: translateY(0%);
+    transition: all 0.5s ease;
+    transform: translateX(0%);
     opacity: 1;
 }
 .branded-heading h1{

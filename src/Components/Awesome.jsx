@@ -48,9 +48,9 @@ function Awesome(props) {
         useEffect(() => {
           let elements = document.querySelectorAll(".Magictxtt")
           let handleScroll = () => {
-              let viewportHeight = window.innerWidth;
+              let viewportHeight = window.innerHeight;
               elements.forEach(element => {
-                  let boundingRect = element.getBoundingClientRect().right;
+                  let boundingRect = element.getBoundingClientRect().top;
                   if (boundingRect < viewportHeight) {
                       element.classList.add('fire');
                   } else {
@@ -62,44 +62,12 @@ function Awesome(props) {
           return () => window.removeEventListener('scroll', handleScroll);
       })
 
-      useEffect(() => {
-        let elements = document.querySelectorAll(".fa-solid")
-        let handleScroll = () => {
-            let viewportHeight = window.innerWidth;
-            elements.forEach(element => {
-                let boundingRect = element.getBoundingClientRect().right;
-                if (boundingRect < viewportHeight) {
-                    element.classList.add('fire');
-                } else {
-                    element.classList.remove('fire');
-                }
-            })
-        }
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    })
     useEffect(() => {
-        let elements = document.querySelectorAll(".fa-brands")
+        let elements = document.querySelectorAll("#icon-circle")
         let handleScroll = () => {
-            let viewportHeight = window.innerWidth;
+            let viewportHeight = window.innerHeight;
             elements.forEach(element => {
-                let boundingRect = element.getBoundingClientRect().right;
-                if (boundingRect < viewportHeight) {
-                    element.classList.add('fire');
-                } else {
-                    element.classList.remove('fire');
-                }
-            })
-        }
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    })
-    useEffect(() => {
-        let elements = document.querySelectorAll(".fas")
-        let handleScroll = () => {
-            let viewportHeight = window.innerWidth;
-            elements.forEach(element => {
-                let boundingRect = element.getBoundingClientRect().right;
+                let boundingRect = element.getBoundingClientRect().top;
                 if (boundingRect < viewportHeight) {
                     element.classList.add('fire');
                 } else {
@@ -125,70 +93,70 @@ function Awesome(props) {
     <div className="category-scroll" ref={scrollContainerRef}>
             <div className="category-item">
             <div className="icon-circle">
-                <i className={`fas fa-tv ${props.mode === 'dark' ? 'text-white' : 'text-black'}`}></i>
+                <i id='icon-circle' className={`fas fa-tv ${props.mode === 'dark' ? 'text-white' : 'text-black'}`}></i>
             </div>
             <span className={`${props.mode === 'dark' ? 'text-white' : 'text-black'}`}>Home Theatres & Soundbars</span>
         </div>
         
         <div className="category-item">
             <div className="icon-circle">
-            <i className={`fa-solid fa-barcode ${props.mode === 'dark' ? 'text-white' : 'text-black'}`}></i>
+            <i id='icon-circle' className={`fa-solid fa-barcode ${props.mode === 'dark' ? 'text-white' : 'text-black'}`}></i>
             </div>
             <span className={`${props.mode === 'dark' ? 'text-white' : 'text-black'}`}>Shop by Barcode</span>
         </div>
 
         <div className="category-item">
             <div className="icon-circle">
-            <i className={`fa-brands fa-shopify ${props.mode === 'dark' ? 'text-white' : 'text-black'}`}></i>
+            <i id='icon-circle' className={`fa-brands fa-shopify ${props.mode === 'dark' ? 'text-white' : 'text-black'}`}></i>
             </div>
             <span className={`${props.mode === 'dark' ? 'text-white' : 'text-black'}`}>Shop by Category</span>
         </div>
 
         <div className="category-item">
             <div className="icon-circle">
-            <i className={`fa-solid fa-film ${props.mode === 'dark' ? 'text-white' : 'text-black'}`}></i>
+            <i id='icon-circle' className={`fa-solid fa-film ${props.mode === 'dark' ? 'text-white' : 'text-black'}`}></i>
             </div>
             <span className={`${props.mode === 'dark' ? 'text-white' : 'text-black'}`}>Wearables</span>
         </div>
 
         <div className="category-item">
             <div className="icon-circle">
-            <i className={`fa-solid fa-camera-retro ${props.mode === 'dark' ? 'text-white' : 'text-black'}`}></i>
+            <i id='icon-circle' className={`fa-solid fa-camera-retro ${props.mode === 'dark' ? 'text-white' : 'text-black'}`}></i>
             </div>
             <span className={`${props.mode === 'dark' ? 'text-white' : 'text-black'}`}>Cameras</span>
         </div>
 
         <div className="category-item">
             <div className="icon-circle">
-                <i className={`fas fa-music ${props.mode === 'dark' ? 'text-white' : 'text-black'}`}></i>
+                <i id='icon-circle' className={`fas fa-music ${props.mode === 'dark' ? 'text-white' : 'text-black'}`}></i>
             </div>
             <span className={`${props.mode === 'dark' ? 'text-white' : 'text-black'}`}>Speakers & Media Players</span>
         </div>
 
         <div className="category-item">
             <div className="icon-circle">
-                <i className={`fa-solid fa-mobile-screen-button ${props.mode === 'dark' ? 'text-white' : 'text-black'}`}></i>
+                <i id='icon-circle' className={`fa-solid fa-mobile-screen-button ${props.mode === 'dark' ? 'text-white' : 'text-black'}`}></i>
             </div>
             <span className={`${props.mode === 'dark' ? 'text-white' : 'text-black'}`}>Mobile Phones</span>
         </div>
 
         <div className="category-item">
             <div className="icon-circle">
-            <i className={`fa-solid fa-money-bill ${props.mode === 'dark' ? 'text-white' : 'text-black'}`}></i>
+            <i id='icon-circle' className={`fa-solid fa-money-bill ${props.mode === 'dark' ? 'text-white' : 'text-black'}`}></i>
             </div>
             <span className={`${props.mode === 'dark' ? 'text-white' : 'text-black'}`}>Money & Finance</span>
         </div>
 
         <div className="category-item">
             <div className="icon-circle">
-            <i className={`fa-solid fa-truck ${props.mode === 'dark' ? 'text-white' : 'text-black'}`}></i>
+            <i id='icon-circle' className={`fa-solid fa-truck ${props.mode === 'dark' ? 'text-white' : 'text-black'}`}></i>
             </div>
             <span className={`${props.mode === 'dark' ? 'text-white' : 'text-black'}`}>Fast Delivery</span>
         </div>
 
         <div className="category-item">
             <div className="icon-circle">
-            <i className={`fa-solid fa-lock ${props.mode === 'dark' ? 'text-white' : 'text-black'}`}></i>
+            <i id='icon-circle' className={`fa-solid fa-lock ${props.mode === 'dark' ? 'text-white' : 'text-black'}`}></i>
 
             </div>
             <span className={`${props.mode === 'dark' ? 'text-white' : 'text-black'}`}>Shop by Brand</span>
@@ -196,7 +164,7 @@ function Awesome(props) {
 
         <div className="category-item">
             <div className="icon-circle">
-            <i className={`fa-solid fa-clock ${props.mode === 'dark' ? 'text-white' : 'text-black'}`}></i>
+            <i id='icon-circle' className={`fa-solid fa-clock ${props.mode === 'dark' ? 'text-white' : 'text-black'}`}></i>
             </div>
             <span className={`${props.mode === 'dark' ? 'text-white' : 'text-black'}`}>Limited Offers</span>
         </div>

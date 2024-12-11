@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import './brands.css'
+import './Smatshop.css'
+
 function brands(props) {
 
   const [currentIndex, setCurrentIndex] = React.useState(0);
@@ -36,10 +38,9 @@ function brands(props) {
     updateCarousel();
   }, [currentIndex]);
 
- 
 
   useEffect(() => {
-    let elements = document.querySelectorAll(".Magical")
+    let elements = document.querySelectorAll(".localll")
     let handleScroll = () => {
       let viewportHeight = window.innerHeight;
       elements.forEach(element => {
@@ -55,10 +56,12 @@ function brands(props) {
     return () => window.removeEventListener('scroll', handleScroll);
   })
 
-   useEffect(() => {
+
+
+  useEffect(() => {
     let elements = document.querySelectorAll(".branded-heading")
     let handleScroll = () => {
-      let viewportHeight = window.innerHeight;
+      let viewportHeight = window.innerWidth;
       elements.forEach(element => {
         let boundingRect = element.getBoundingClientRect().top;
         if (boundingRect < viewportHeight) {
@@ -71,6 +74,8 @@ function brands(props) {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   })
+
+
 
   return (
     <div>
@@ -84,42 +89,42 @@ function brands(props) {
         <button className="carouseled-btn right" onClick={handleRightClick}>&#8250;</button>
 
         <div className="carouseled-track" ref={trackRef}>
-          <div className={`carouseled-card  color-${props.mode}`}>
-            <img className='Magical' src="https://assets.tatacliq.com/medias/sys_master/images/62926918844446.jpg" alt="Titan" />
+          <div className={`carouseled-card localll color-${props.mode}`}>
+            <img className='' src="https://assets.tatacliq.com/medias/sys_master/images/62926918844446.jpg" alt="Titan" />
             <h3>Titan</h3>
             <p> Up to 50% Off</p>
           </div>
-          <div className={`carouseled-card color-${props.mode}`}>
-            <img className='Magical' src="https://assets.tatacliq.com/medias/sys_master/images/62926918778910.jpg" alt="Puma" />
+          <div className={`carouseled-card localll color-${props.mode}`}>
+            <img className='' src="https://assets.tatacliq.com/medias/sys_master/images/62926918778910.jpg" alt="Puma" />
             <h3>Puma</h3>
             <p>Min 50% + 10% Off</p>
           </div>
-          <div className={`carouseled-card color-${props.mode}`}>
-            <img className='Magical' src="https://assets.tatacliq.com/medias/sys_master/images/62926918582302.jpg" alt="Libas" />
+          <div className={`carouseled-card localll color-${props.mode}`}>
+            <img className='' src="https://assets.tatacliq.com/medias/sys_master/images/62926918582302.jpg" alt="Libas" />
             <h3>Libas</h3>
             <p>Min 50% + 10% Off</p>
           </div>
-          <div className={`carouseled-card color-${props.mode}`}>
-            <img className='Magical' src="https://assets.tatacliq.com/medias/sys_master/images/62926918909982.jpg" alt="Vero Moda" />
+          <div className={`carouseled-card localll color-${props.mode}`}>
+            <img className='' src="https://assets.tatacliq.com/medias/sys_master/images/62926918909982.jpg" alt="Vero Moda" />
             <h3>Vero Moda</h3>
             <p>Min 30% + 20% Off</p>
           </div>
 
-          <div className={`carouseled-card color-${props.mode}`}>
-            <img className='Magical' src="https://assets.tatacliq.com/medias/sys_master/images/62926918582302.jpg" alt="Vero Moda" />
+          <div className={`carouseled-card localll color-${props.mode}`}>
+            <img className='' src="https://assets.tatacliq.com/medias/sys_master/images/62926918582302.jpg" alt="Vero Moda" />
             <h3>Vero Moda</h3>
             <p>Min 30% + 20% Off</p>
           </div>
 
-          <div className={`carouseled-card color-${props.mode}`}>
-            <img className='Magical' src="https://assets.tatacliq.com/medias/sys_master/images/62926918647838.jpg" alt="Vero Moda" />
+          <div className={`carouseled-card localll color-${props.mode}`}>
+            <img className='' src="https://assets.tatacliq.com/medias/sys_master/images/62926918647838.jpg" alt="Vero Moda" />
             <h3>Vero Moda</h3>
             <p>Min 30% + 20% Off</p>
           </div>
 
 
-          <div className={`carouseled-card color-${props.mode}`}>
-            <img className='Magical' src="https://assets.tatacliq.com/medias/sys_master/images/62926918582302.jpg" alt="Vero Moda" />
+          <div className={`carouseled-card localll color-${props.mode}`}>
+            <img className='' src="https://assets.tatacliq.com/medias/sys_master/images/62926918582302.jpg" alt="Vero Moda" />
             <h3>Vero Moda</h3>
             <p>Min 30% + 20% Off</p>
           </div>

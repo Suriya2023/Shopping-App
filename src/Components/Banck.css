@@ -46,34 +46,34 @@
     /* border: 2px solid blue; */
 }
 .listimg{
-    transition: all 0.15s ease;
+    transition: all 0.5s ease;
     transform: translateY(400%);
     opacity: 0;
 }
 .listimg.fire{
     opacity: 1;
-    transform: translateY(0%);
-    transition: all 0.15s ease;
+    transform: translateX(0%);
+    transition: all 0.5s ease;
 }
 .listimg2{
-    transition: all 0.15s ease;
+    transition: all 0.5s ease;
     transform: translateY(400%);
     opacity: 0;
 }
 .listimg2.fire{
     opacity: 1;
-    transform: translateY(0%);
-    transition: all 0.15s ease;
+    transform: translateX(0%);
+    transition: all 0.5s ease;
 }
 .listimg3{
-    transition: all 0.15s ease;
+    transition: all 0.5s ease;
     transform: translateY(400%);
     opacity: 0;
 }
 .listimg3.fire{
     opacity: 1;
-    transform: translateY(0%);
-    transition: all 0.15s ease;
+    transform: translateX(0%);
+    transition: all 0.5s ease;
 }
 
 .list img{

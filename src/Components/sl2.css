@@ -23,6 +23,16 @@
    font-style: oblique;
    font-weight: 600;
    text-align: center;
+   transition: all 0.5s ease;
+   transform: translateY(400%);
+   opacity: 0;
+}
+
+ 
+.CategoriesH1.fire{
+   opacity: 1;
+   transform: translateX(0%);
+   transition: all 0.5s ease;
 }
 .CategoriesH1:hover{
    text-decoration: underline;
@@ -45,9 +55,10 @@
     object-fit: cover;
  }
 
- .imgggd:hover img {
+ .imgggd:hover {
     /* border-radius: 1vmin; */
-    transform: scale(1.1);
+    transform: scale(0.9);
+    border: none;
     /* box-shadow: 10px 10px 10px 0 rgba(112, 177, 190, 0.1); */
  }
 
@@ -70,16 +81,15 @@
    .imgggd {
       border: none;
    }
-   .containere{
-      border: 1px solid;
-   }
+   
    .imgggd {
       border-radius: 2vmin;
-      border: 1px solid;
-      border-radius: 2vmin;
+      /* border: 1px solid; */
+      /* border-radius: 2vmin; */
    }
    .imgggd:hover{
       border: none;
+      border: 2px solid;
       border-radius: 2vmin;
    }
 }
