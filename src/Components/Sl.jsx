@@ -66,20 +66,20 @@ function Sl(props) {
             <div className="slider-containerr">
                 <div className="sliderr">
                     <div className="slidee" id='side'>
-                    <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1733633311/Croma%20Assets/CMS/LP%20Page%20Banners/2024/Sanity/HP/Dec/08122024/HP_Rotating_Monitor_8Dec2024_gbppz1.jpg" alt="..." />
+                    <img src="https://assets.tatacliq.com/medias/sys_master/images/63105235877918.png" alt="..." />
 
                     </div>
                     <div className="slidee" id='side1'>
-                    <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1733580691/Croma%20Assets/CMS/Homepage%20Banners/HP%20Rotating/2024/Dec/08122024/Desktop/HP_Rotating_MB_8Dec2024_xx7y1e.jpg" alt="..." />
+                    <img src="https://assets.tatacliq.com/medias/sys_master/images/63111933984798.png" alt="..." />
 
                     </div>
                     <div className="slidee" id='side2'>
-                    <img src="https://assets.tatacliq.com/medias/sys_master/images/63053281591326.jpg" alt="..." />
+                    <img src="https://assets.tatacliq.com/medias/sys_master/images/63111934115870.png" alt="..." />
 
                     </div>
-                    <div className="slidee" id='side3'>
-                    <img src="https://assets.tatacliq.com/medias/sys_master/images/63053281919006.jpg" alt="..." />
-                    </div>
+                    {/* <div className="slidee" id='side3'>
+                    <img src="https://assets.tatacliq.com/medias/sys_master/images/63113128378398.jpg" alt="..." />
+                    </div> */}
                 </div>
                 <button className="prevv" onClick={prevSlide}>&#10094;</button>
                 <button className="nextt" onClick={nextSlide}>&#10095;</button>
