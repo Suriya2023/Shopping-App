@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
 
 import './App.css'
@@ -25,6 +25,7 @@ import Exclusive from './Components/Exclusive';
 import Footer from './Components/Footer';
 import MobileView from './Components/MobileView';
 import UserLogin from './Components/UserLogin';
+// import ShoppingCart from './Components/ShoppingCart';
 
 // import Menu from './Components/menu';
 // import Cart from './Components/cart';
@@ -79,6 +80,19 @@ function App() {
       document.getElementById('mbbottom').style.background = "black"
       document.getElementById('mbbottom').style.color = "white"
 
+
+
+      document.getElementById('container00').style.background = "black"
+      document.getElementById('container00').style.color = "white"
+      document.getElementById('container00').style.border = "2px solid white"
+
+      
+
+      document.getElementById('Mainsewaar').style.background = "black"
+      document.getElementById('Mainsewaar').style.color = "white"
+      document.getElementById('Mainsewaar').style.border = "2px solid white"
+
+
     } else {
       setMode('light');
       document.body.style.background = "white"
@@ -87,6 +101,11 @@ function App() {
       document.getElementById('anim').style.background = "white"
       document.getElementById('anim').style.border = "2px solid black"
       document.getElementById('anim').style.color = "black"
+
+      document.getElementById('Mainsewaar').style.background = "white"
+      document.getElementById('Mainsewaar').style.border = "2px solid black"
+      document.getElementById('Mainsewaar').style.color = "black"
+
 
       document.getElementById('anim1').style.background = "white"
       document.getElementById('anim1').style.color = "black"
@@ -111,6 +130,11 @@ function App() {
 
       document.getElementById('mbbottom').style.background = "white"
       document.getElementById('mbbottom').style.color = "black"
+
+
+      document.getElementById('container00').style.background = "white"
+      document.getElementById('container00').style.border = "2px solid black"
+      document.getElementById('container00').style.color = "black"
 
       document.body.style.transition = 'all .5s'
 
@@ -207,7 +231,12 @@ function App() {
 
   
       {/* <Cart  /> */}
+
+
       <Na mode={mode} ToggleMode={ToggleMode} />
+      {/* <ShoppingCart/> */}
+
+
       <Sl mode={mode} />
       <br mode={mode} />
 
@@ -238,6 +267,9 @@ function App() {
         mode={mode}
         CloseSidebar={CloseSidebar}
       />
+
+
+
 
 
 

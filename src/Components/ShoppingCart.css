@@ -1,0 +1,32 @@
+.shopping-cart {
+    position: relative;
+  }
+  
+  .cart-logo {
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .cart-section {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 300px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .cart-section.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  

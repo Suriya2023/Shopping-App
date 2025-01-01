@@ -1,0 +1,101 @@
+._container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.Mainsewaar h1 {
+  font-weight: 600;
+  text-align: center;
+  font-style: italic;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+}
+
+
+.Mainsewaarh1 {
+    font-weight: 600;
+    text-align: center;
+    font-style: italic;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1rem;
+  }
+._section {
+  /* background: #fff; */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1 1 30%;
+  min-width: 300px;
+}
+
+._section h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  /* color: #333; */
+  text-align: center;
+}
+
+._card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+._card {
+  /* background: #f9f9f9; */
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+._card:hover {
+  transform: scale(1.05);
+}
+
+._card img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+._card p {
+  margin: 5px 0;
+  font-size: 14px;
+  /* color: #555; */
+}
+
+._price {
+  font-size: 16px;
+  font-weight: bold;
+  color: green;
+}
+
+._discount {
+  text-decoration: line-through;
+  font-size: 14px;
+  color: red;
+}
+
+@media (max-width: 768px) {
+  ._container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ._section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  ._card-container {
+    grid-template-columns: 1fr;
+  }
+}

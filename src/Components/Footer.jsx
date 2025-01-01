@@ -1,8 +1,27 @@
-import React,{useEffect} from 'react'
+import React, { useEffect } from 'react'
 import './Footer.css'
 function Footer(props) {
     useEffect(() => {
-        const elements = document.querySelectorAll('.column');
+        const elements = document.querySelectorAll('#column2');
+        const handleScroll = () => {
+            const viewportHeight = window.innerHeight;
+            elements.forEach(element => {
+                const boundingRect = element.getBoundingClientRect().top;
+                if (boundingRect < viewportHeight) {
+                    element.classList.add('fire');
+                } else {
+                    element.classList.remove('fire');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    useEffect(() => {
+        const elements = document.querySelectorAll('#column1');
         const handleScroll = () => {
             const viewportHeight = window.innerHeight;
             elements.forEach(element => {
@@ -47,7 +66,7 @@ function Footer(props) {
                 {/* <hr /> */}
                 <br />
                 <div className={`container text-${props.mode === 'light' ? 'dark' : 'light'}`}>
-                    <div className="column">
+                    <div id='column1' className="column">
                         <h4 style={{ fontStyle: 'oblique', fontWeight: '600' }}>Get to Know Us</h4>
                         <ul>
                             <li><a style={{ fontStyle: 'oblique' }} href="#">About Shops</a></li>
@@ -56,7 +75,7 @@ function Footer(props) {
                             <li><a style={{ fontStyle: 'oblique' }} href="#">Shops Science</a></li>
                         </ul>
                     </div>
-                    <div   className="column">
+                    <div id='column2' className="column">
                         <h4 style={{ fontStyle: 'oblique', fontWeight: '600' }}>Connect with Us</h4>
                         <ul>
                             <li><a style={{ fontStyle: 'oblique' }} href="#">Facebook</a></li>
@@ -64,7 +83,7 @@ function Footer(props) {
                             <li><a style={{ fontStyle: 'oblique' }} href="#">Instagram</a></li>
                         </ul>
                     </div>
-                    <div  className="column">
+                    <div id='column1' className="column">
                         <h4 style={{ fontStyle: 'oblique', fontWeight: '600' }}>Make Money with Us</h4>
                         <ul>
                             <li><a style={{ fontStyle: 'oblique' }} href="#">Sell on Shops</a></li>
@@ -78,9 +97,9 @@ function Footer(props) {
                             <li><a style={{ fontStyle: 'oblique' }} href="#">Shops Pay on Merchants</a></li>
                         </ul>
                     </div>
-                    <div  id='column3' className="column">
+                    <div id='column3' className="column">
                         <h4 style={{ fontStyle: 'oblique', fontWeight: '600' }}>Let Us Help You</h4>
-                        <ul>
+                        <ul id='column2'>
                             <li><a style={{ fontStyle: 'oblique' }} href="#">Your Account</a></li>
                             <li><a style={{ fontStyle: 'oblique' }} href="#">Returns Centre</a></li>
                             <li><a style={{ fontStyle: 'oblique' }} href="#">Recalls and Product Safety Alerts</a></li>
@@ -92,7 +111,7 @@ function Footer(props) {
                 </div>
                 <hr />
 
-                <div className="footer-bottom">
+                <div id='column1' className="footer-bottom">
                     <p style={{ fontStyle: 'oblique', fontSize: '1rem', hover: 'underline' }}>&copy; 2024 Shop</p>
                     <h1 style={{ fontStyle: 'oblique', fontSize: '1rem', hover: 'underline' }}> Made with ❤️ by <a href="/">Suraj Singh Rajput</a></h1>
                 </div>

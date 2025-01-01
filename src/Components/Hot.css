@@ -96,19 +96,15 @@
 
 .lakals {
     transition: all 0.9s ease;
-    transform: translateY(400%);
-    opacity: 0;
+    /* transform: translateY(400%);
+    opacity: 0; */
 }
 
-.lakals.fire {
-    opacity: 1;
-    transform: translateX(0%);
-}
-
+ 
 .lakals2 {
     transition: all 0.9s ease;
-    transform: translateY(400%);
-    opacity: 0;
+    /* transform: translateY(400%); */
+    /* opacity: 0; */
 }
 
 .lakals2.fire {
@@ -118,8 +114,8 @@
 
 .lakals3 {
     transition: all 0.9s ease;
-    transform: translateY(400%);
-    opacity: 0;
+    /* transform: translateY(400%); */
+    /* opacity: 0; */
 }
 
 .lakals3.fire {
