@@ -85,6 +85,13 @@ function Categorie(props) {
         <img src="https://assets.tatacliq.com/medias/sys_master/images/62926917533726.png" alt="" />
         </div>
 
+        <div className='imgggd localll'>
+          <img src="https://assets.tatacliq.com/medias/sys_master/images/62926917861406.png" alt="" />
+        </div>
+
+        <div className='imgggd localll' id='last'>
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/62926917533726.png" alt="" />
+        </div>
 
         {/* <div className='imgggd localll' >
           <img src="https://assets.tatacliq.com/medias/sys_master/images/62926892466206.jpg" alt="" />

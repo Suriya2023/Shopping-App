@@ -1,7 +1,7 @@
 import { React } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-import CardGrid from './CardGrid';
 
 import './Normal.css'
 function Na(props) {
@@ -193,14 +193,14 @@ function Na(props) {
             <nav className={`navbar navbar-expand-lg bg-${props.mode} navbar-${props.mode} `}>
                 <div className={`container  ${props.mode === 'light' ? 'dark' : 'light'}`}>
                     <div className={`logo ${props.mode === 'light' ? 'dark' : 'light'} `}>
-                        <span className="logo-box"><i className="fa-solid fa-bag-shopping"></i> <i style={{ fontStyle: 'oblique' }} className={`underline  ${props.mode === 'light' ? 'dark' : 'light'}`}>Shop</i></span>
+                        <span className="logo-box"><i className="fa-solid fa-bag-shopping"></i> <i style={{ fontStyle: 'oblique' }} className={`underline  ${props.mode === 'light' ? 'dark' : 'light'}`}><Link to="/Shopping-App/">Shop</Link></i></span>
                     </div>
 
 
 
                     <div className='responss'>
                         <ul className={`nav-links bg-${props.mode}`} id="nav-links">
-                            <li id=''><a style={{ fontStyle: 'oblique' }} className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Men</a></li>
+                            <li id=''><Link style={{ fontStyle: 'oblique' }} className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} to="/Shopping-App/Men">Men</Link></li>
                             <li id='' ><a style={{ fontStyle: 'oblique' }} className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Women</a></li>
                             <li id='' ><a style={{ fontStyle: 'oblique' }} className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Kids</a></li>
                             <li id='' ><a style={{ fontStyle: 'oblique' }} className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Home & Living </a></li>
@@ -292,7 +292,7 @@ function Na(props) {
 
                 <div id='respons' className='smallPosition'>
                     <ul className={`nav-links bg-${props.mode}`} id="nav-links  smallPosition">
-                        <li id='anim'><a href="/" style={{ fontStyle: 'oblique' }} className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Men</a></li>
+                        <li id='anim'><Link  style={{ fontStyle: 'oblique' }} className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} to="/Shopping-App/Men">Men</Link></li>
                         <li id='anim1' ><a style={{ fontStyle: 'oblique' }} className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Women</a></li>
                         <li id='anim2' ><a style={{ fontStyle: 'oblique' }} className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Kids</a></li>
                         <li id='anim3' ><a style={{ fontStyle: 'oblique' }} className={`$bg-{props.mode === 'light' ? 'dark' : 'light'}`} href="#">Home & Living </a></li>
@@ -325,17 +325,6 @@ function Na(props) {
             </nav>
             {/* <span>{props.cart}</span> */}
 
-            {/* <CardGrid /> */}
-{/* 
-            <Router>
-
-                <Routes>
-
-                    <Route path='./' />
-                </Routes>
-                <Routes />
-
-            </Router> */}
 
         </div>
 

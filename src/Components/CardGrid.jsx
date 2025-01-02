@@ -2,13 +2,13 @@ import React from 'react'
 import './CardGrid.css'
 function CardGrid(props) {
     return (
-        <div>
-            <div id='Mainsewaar' className={`Mainsewaar`}>
+        <div >
+            <div id='Mainsewaar' className={`Mainsewaar bg-${props.mode === 'light' ? 'dark' : 'light'}}`}>
                 {/* <h1 style="font-weight: 600; text-align: center; cursor: pointer; font-family: &quot;Times New Roman&quot;, Times, serif; font-size: 2rem;">Categories With Product..</h1> */}
 
                 <h1  >men's wear clothes....</h1>
             </div>
-            <div className="_container">
+            <div className={`_container bg-${props.mode} `} >
 
                 {/* <!-- Section 1 --> */}
                 <div className="_section">

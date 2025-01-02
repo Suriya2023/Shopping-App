@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import './Footer.css'
+
 function Footer(props) {
     useEffect(() => {
         const elements = document.querySelectorAll('#column2');
